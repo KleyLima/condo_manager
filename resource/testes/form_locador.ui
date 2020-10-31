@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form_prop</class>
- <widget class="QWidget" name="Form_prop">
+ <class>Form_locador</class>
+ <widget class="QWidget" name="Form_locador">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -37,7 +37,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Cadastro de Proprietarios</string>
+    <string>Cadastro de Locadores</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -62,7 +62,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Nome do proprietário</string>
+    <string>Nome do Locador</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -192,9 +192,9 @@
   <widget class="QLineEdit" name="line_nome_prop">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>210</x>
      <y>100</y>
-     <width>391</width>
+     <width>441</width>
      <height>31</height>
     </rect>
    </property>
