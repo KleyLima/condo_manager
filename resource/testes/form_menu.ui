@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="b_cadastro_visitante">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>170</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Visitante</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_cadastro_locador">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>170</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Locadores</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_consulta_visitante">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Consulta Visitante</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_cadastro_locatario">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>170</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Locatarios</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu Condensed</family>
+      <pointsize>23</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Suposta Tela de Menu</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Possivel Logo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sair_programa">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sair</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>270</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Registro de visitas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Consultar Ordem de Serviço</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Abrir Ordem de Serviço</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>270</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.........</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>997</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
