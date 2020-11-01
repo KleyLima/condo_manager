@@ -14,20 +14,20 @@ class Telas:
         self.path = path
         self.loaded = None
         self.load()
-      
+
     def load(self):
         self.loaded = uic.loadUi(source_interface + self.path)
 
     def show(self):
         if not self.loaded:
             self.load()
-        
+
         self.loaded.show()
 
     def hide(self):
         self.loaded.hide()
 
-    
+
 app = QtWidgets.QApplication([])
 primeira_tela = Telas("/resource/testes/untitled.ui").loaded
 locador = Telas("/resource/testes/form_locador.ui").loaded
