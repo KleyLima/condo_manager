@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from resource.testes.telas import app, menu, consulta_cli, form_visitante, locador, form_locatario
+from resource.testes.telas import app, menu, consulta_visitante, form_visitante, locador, form_locatario
 from time import sleep
 
 
 def b_consulta_visitante():
-    consulta_cli.show()
+    b_consulta_visitante.show()
 
 
 def b_cadastro_visitante():
