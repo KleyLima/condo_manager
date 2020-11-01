@@ -33,6 +33,6 @@ primeira_tela = Telas("/resource/testes/untitled.ui").loaded
 locador = Telas("/resource/testes/form_locador.ui").loaded
 endereco = Telas("/resource/testes/form_ender.ui").loaded
 menu = Telas("/resource/testes/form_menu.ui").loaded
-consulta_cli = Telas("/resource/testes/form_consulta_cli.ui").loaded
+consulta_visitante = Telas("/resource/testes/form_consulta_cli.ui").loaded
 form_visitante = Telas("/resource/testes/form_visitante.ui").loaded
 form_locatario = Telas("/resource/testes/form_locatario.ui").loaded

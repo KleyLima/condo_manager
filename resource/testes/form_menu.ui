@@ -50,7 +50,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Consulta Visitante</string>
+     <string>Consultar Visitante</string>
     </property>
    </widget>
    <widget class="QPushButton" name="b_cadastro_locatario">
