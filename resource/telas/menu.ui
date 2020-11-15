@@ -2,12 +2,15 @@
 <ui version="4.0">
  <class>Menu</class>
  <widget class="QMainWindow" name="Menu">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>997</width>
-    <height>597</height>
+    <width>981</width>
+    <height>534</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -69,9 +72,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>460</x>
       <y>30</y>
-      <width>261</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -84,7 +87,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Suposta Tela de Menu</string>
+     <string>MENU</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -103,8 +106,8 @@
    <widget class="QPushButton" name="sair_programa">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>0</y>
+      <x>880</x>
+      <y>30</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -113,33 +116,7 @@
      <string>Sair</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>270</y>
-      <width>211</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Registro de visitas</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_6">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>270</y>
-      <width>211</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Consultar Ordem de Serviço</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="b_registro_visitas">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -149,10 +126,23 @@
      </rect>
     </property>
     <property name="text">
-     <string>Abrir Ordem de Serviço</string>
+     <string>Registro de visitas</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="b_cadastrar_veiculo">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>270</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar veiculo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_contrato_locacao">
     <property name="geometry">
      <rect>
       <x>760</x>
@@ -162,19 +152,48 @@
      </rect>
     </property>
     <property name="text">
-     <string>.........</string>
+     <string>Contrato Locação</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>997</width>
-     <height>22</height>
-    </rect>
-   </property>
+   <widget class="QPushButton" name="b_cadastrar_imovel">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar Imóvel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_gerar_cotas">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>380</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gerar cotas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_gerencias_materias">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>380</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gerenciar materias</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

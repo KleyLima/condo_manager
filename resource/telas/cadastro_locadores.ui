@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form_locatario</class>
- <widget class="QWidget" name="Form_locatario">
+ <class>Form_locador</class>
+ <widget class="QWidget" name="Form_locador">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>689</width>
-    <height>586</height>
+    <height>543</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -37,7 +37,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Cadastro de Locatário</string>
+    <string>Cadastro de Locadores</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -62,7 +62,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Nome do Locatario</string>
+    <string>Nome do Locador</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -176,11 +176,11 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="salvar_owner">
+  <widget class="QPushButton" name="salvar_locador">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>500</y>
+     <x>440</x>
+     <y>450</y>
      <width>151</width>
      <height>61</height>
     </rect>
@@ -189,17 +189,17 @@
     <string>Salvar dados</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="line_nome_prop">
+  <widget class="QLineEdit" name="line_nome_locador">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>210</x>
      <y>100</y>
-     <width>421</width>
+     <width>441</width>
      <height>31</height>
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="line_email">
+  <widget class="QLineEdit" name="line_email_locador">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -209,7 +209,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="line_nacio">
+  <widget class="QLineEdit" name="line_nacio_locador">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -219,7 +219,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="line_cpf">
+  <widget class="QLineEdit" name="line_cpf_locador">
    <property name="geometry">
     <rect>
      <x>470</x>
@@ -229,7 +229,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="line_telef">
+  <widget class="QLineEdit" name="line_telef_locador">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -384,7 +384,7 @@
     </property>
    </widget>
   </widget>
-  <widget class="QLineEdit" name="line_nasc">
+  <widget class="QLineEdit" name="line_nasc_locador">
    <property name="geometry">
     <rect>
      <x>500</x>
@@ -394,24 +394,11 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="cancel">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>440</y>
-     <width>111</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="salvar_owner_2">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>500</y>
+     <x>80</x>
+     <y>450</y>
      <width>151</width>
      <height>61</height>
     </rect>
