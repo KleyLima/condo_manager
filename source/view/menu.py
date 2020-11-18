@@ -1,27 +1,24 @@
 # -*- coding: utf-8 -*-
 
-from resource.testes.telas import app, menu, consulta_visitante, form_visitante, locador, form_locatario
+from resource.telas.inicializacao import app, menu, cadastro_visitante, cadastro_locatario
 from time import sleep
 
 
-def b_consulta_visitante():
-    b_consulta_visitante.show()
+# def b_consulta_visitante():
+#     b_consulta_visitante.show()
 
 
 def b_cadastro_visitante():
     menu.hide()
-    form_visitante.show()
-
-
-def b_cadastro_locador():
-    locador.show()
+    cadastro_visitante.show()
 
 
 def b_cadastro_locatario():
-    form_locatario.show()
+    menu.hide()
+    cadastro_locatario.show()
 
 
-menu.b_consulta_visitante.clicked.connect(b_consulta_visitante)
+# menu.b_consulta_visitante.clicked.connect(b_consulta_visitante)
 menu.b_cadastro_visitante.clicked.connect(b_cadastro_visitante)
-menu.b_cadastro_locador.clicked.connect(b_cadastro_locador)
+# menu.b_cadastro_locador.clicked.connect(b_cadastro_locador)
 menu.b_cadastro_locatario.clicked.connect(b_cadastro_locatario)
