@@ -3,7 +3,7 @@
 from PyQt5.QtWidgets import QDesktopWidget
 
 
-def location_on_the_screen(tela):
+def center_screen(tela):
     """
     Wanna a window centred on screen? here is your saviour!
     :param tela: Screen to be centred. Is a PyQt5 QtWidget object

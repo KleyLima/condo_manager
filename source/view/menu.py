@@ -13,6 +13,7 @@ from resource.telas.inicializacao import (
     controle_material,
 )
 from time import sleep
+from source.utils.centralizar_tela import center_screen
 
 
 def b_consulta_visitante():
@@ -63,3 +64,4 @@ menu.b_cadastrar_imovel.clicked.connect(b_cadastrar_imovel)
 menu.b_cadastrar_veiculo.clicked.connect(b_cadastrar_veiculo)
 menu.b_gerencias_materias.clicked.connect(b_gerencias_materias)
 menu.b_contrato_locacao.clicked.connect(b_contrato_locacao)
+center_screen(menu)
