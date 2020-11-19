@@ -6,6 +6,7 @@ from source.utils.centralizar_tela import location_on_the_screen
 
 # Example of a funcion assigned to a button:
 
+
 def teste():
     cadastro_visitante.hide()
     menu.show()

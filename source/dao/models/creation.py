@@ -1,7 +1,7 @@
 from source.dao.models.owner import Owner
 from source.dao.models.address import Address
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         Owner.create_table()
         print("Tabela 'Owner' criada com sucesso!")

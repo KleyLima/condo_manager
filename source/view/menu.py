@@ -1,6 +1,17 @@
 # -*- coding: utf-8 -*-
 
-from resource.telas.inicializacao import app, menu, cadastro_visitante, cadastro_locatario, consulta_visitante, cadastro_locadores, cadastrar_imovel, cadastrar_veiculo, cadastrar_locacao, controle_material
+from resource.telas.inicializacao import (
+    app,
+    menu,
+    cadastro_visitante,
+    cadastro_locatario,
+    consulta_visitante,
+    cadastro_locadores,
+    cadastrar_imovel,
+    cadastrar_veiculo,
+    cadastrar_locacao,
+    controle_material,
+)
 from time import sleep
 
 
@@ -44,11 +55,9 @@ def b_gerencias_materias():
     controle_material.show()
 
 
-
-
 menu.b_consulta_visitante.clicked.connect(b_consulta_visitante)
 menu.b_cadastro_visitante.clicked.connect(b_cadastro_visitante)
-menu.b_cadastro_locador.clicked.connect(b_cadastro_locador)   
+menu.b_cadastro_locador.clicked.connect(b_cadastro_locador)
 menu.b_cadastro_locatario.clicked.connect(b_cadastro_locatario)
 menu.b_cadastrar_imovel.clicked.connect(b_cadastrar_imovel)
 menu.b_cadastrar_veiculo.clicked.connect(b_cadastrar_veiculo)

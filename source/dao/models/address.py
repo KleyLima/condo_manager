@@ -5,6 +5,7 @@ class Address(BaseModel):
     """
     Representa um endereço, seja de imóvel, proprietário ou locatário na aplicação.
     """
+
     address = peewee.CharField()
     number = peewee.IntegerField()
     cep = peewee.CharField()

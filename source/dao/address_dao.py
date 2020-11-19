@@ -2,8 +2,15 @@ from source.dao.models.address import Address
 
 
 def insert_address(address, number, cep, complement, state, city, neighborhood):
-    addr = Address(address=address, number=number, cep=cep, complement=complement, state=state, city=city,
-                   neighborhood=neighborhood)
+    addr = Address(
+        address=address,
+        number=number,
+        cep=cep,
+        complement=complement,
+        state=state,
+        city=city,
+        neighborhood=neighborhood,
+    )
     return addr.save()
 
 

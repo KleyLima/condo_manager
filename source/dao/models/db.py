@@ -3,7 +3,7 @@ from os import environ
 
 
 base = environ.get("PYTHONPATH") + "/source/dao/models/"
-db = peewee.SqliteDatabase(base + 'test_condo.db')
+db = peewee.SqliteDatabase(base + "test_condo.db")
 
 
 class BaseModel(peewee.Model):

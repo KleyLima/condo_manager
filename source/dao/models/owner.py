@@ -6,6 +6,7 @@ class Owner(BaseModel):
     """
     Classe que representa um proprietário de imóvel dentro da aplicação
     """
+
     owner_name = peewee.CharField()
     cpf = peewee.CharField()
     email = peewee.CharField()

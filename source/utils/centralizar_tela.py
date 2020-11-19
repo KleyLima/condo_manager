@@ -13,4 +13,4 @@ def location_on_the_screen(tela):
     widget = tela.geometry()
     x = screen.width() - widget.width()
     y = screen.height() - widget.height()
-    tela.move(x/2, y/2)
+    tela.move(x / 2, y / 2)
