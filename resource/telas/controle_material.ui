@@ -83,6 +83,19 @@
     <string>Controle de Materiais</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="b_menu">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MENU</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
