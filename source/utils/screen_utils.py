@@ -40,3 +40,13 @@ def back_to_menu(frame):
     """
     frame.hide()
     menu.show()
+
+
+def clear_and_exit(frame):
+    """
+    Just a junction of the to funcions above.
+    :param frame: (QtWidget) A frame/window to be swaped for the menu.
+    :return: None
+    """
+    clear_input_boxes(frame)
+    back_to_menu(frame)
