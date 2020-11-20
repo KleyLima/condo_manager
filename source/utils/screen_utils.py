@@ -25,7 +25,10 @@ def clear_input_boxes(frame):
     :param frame: (QtWidget) A frame/window to be cleared.
     :return: None.
     """
-    for input_box in frame.findChildren(QLineEdit):
+    inputs = frame.findChildren(QLineEdit)
+    if not isinstance(inputs, list):
+        return False
+    for input_box in inputs:
         input_box.clear()
 
 
