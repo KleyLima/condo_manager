@@ -6,11 +6,11 @@ from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_
 from PyQt5.QtWidgets import QLineEdit
 
 
-def teste():
+def clear_and_exit():
     clear_input_boxes(cadastro_visitante)
     back_to_menu(cadastro_visitante)
 
 
-cadastro_visitante.cancel.clicked.connect(teste)
+cadastro_visitante.cancel.clicked.connect(clear_and_exit)
 cadastro_visitante.setWindowFlag(Qt.FramelessWindowHint)
 center_screen(cadastro_visitante)
