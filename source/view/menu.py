@@ -13,7 +13,7 @@ from resource.telas.inicializacao import (
     controle_material,
 )
 from time import sleep
-from source.utils.centralizar_tela import center_screen
+from source.utils.screen_utils import center_screen
 
 
 def b_consulta_visitante():

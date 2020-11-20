@@ -2,7 +2,7 @@
 
 from resource.telas.inicializacao import app, cadastro_locadores
 from PyQt5.QtCore import Qt
-from source.utils.centralizar_tela import center_screen
+from source.utils.screen_utils import center_screen
 
 
 cadastro_locadores.setWindowFlag(Qt.FramelessWindowHint)

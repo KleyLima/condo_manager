@@ -2,20 +2,15 @@
 
 from resource.telas.inicializacao import app, cadastro_visitante, menu
 from PyQt5.QtCore import Qt
-from source.utils.centralizar_tela import center_screen
+from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_menu
 from PyQt5.QtWidgets import QLineEdit
-
-# Example of a funcion assigned to a button:
-
-print(type(cadastro_visitante.line_nome_visitante))
 
 
 def teste():
-    cadastro_visitante.hide()
-    menu.show()
+    clear_input_boxes(cadastro_visitante)
+    back_to_menu(cadastro_visitante)
 
 
-cadastro_visitante.salvar_visitante.clicked.connect(teste)
+cadastro_visitante.cancel.clicked.connect(teste)
 cadastro_visitante.setWindowFlag(Qt.FramelessWindowHint)
 center_screen(cadastro_visitante)
-na = cadastro_visitante.findChild(QLineEdit)
