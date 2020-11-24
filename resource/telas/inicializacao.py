@@ -38,3 +38,4 @@ cadastrar_imovel = Telas("/resource/telas/cadastrar_imovel.ui").loaded       #
 cadastrar_veiculo = Telas("/resource/telas/cadastrar_veiculo.ui").loaded     #
 cadastrar_locacao = Telas("/resource/telas/cadastrar_locacao.ui").loaded     #
 controle_material = Telas("/resource/telas/controle_material.ui").loaded
+error = Telas("/resource/telas/error.ui").loaded
