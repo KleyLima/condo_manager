@@ -15,6 +15,7 @@ from source.view.cadastro_locadores import *
 from source.view.cadastrar_veiculo import *
 from source.view.cadastrar_locacao import *
 from source.view.cadastrar_imovel import *
+from source.view.error import *
 
 
 # inicialização da tela principal
