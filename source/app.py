@@ -5,8 +5,8 @@
 """
 
 from PyQt5 import uic, QtWidgets
-from os import environ
 from source.view.menu import *
+from os import environ
 from source.view.cadastro_visitante import *
 from source.view.cadastro_locatario import *
 from source.view.controle_material import *

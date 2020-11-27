@@ -1,5 +1,8 @@
 from source.dao.models.visitante import Visitante
 
+"""
+    This is the central os visitantes functions.
+"""
 
 def insert_visitor(name, email, cpf, tel, address):
     visi = Visitante(
@@ -14,4 +17,9 @@ def insert_visitor(name, email, cpf, tel, address):
 
 
 def select_by_cpf(cpf):
-    return Visitante.select().where(Visitante.visitor_cpf == cpf).get().visitor_name
+    by_cpf = Visitante.select().where(Visitante.visitor_cpf == cpf).limit(1)
+    return True if len(by_cpf) > 0 else False
+    # try:
+    #     return True
+    # except Visitante.model.DoesNotExist:
+    #     return False

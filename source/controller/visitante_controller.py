@@ -3,6 +3,7 @@
 from source.utils.validation_utils import email_checker
 from source.dao.visitante_dao import insert_visitor
 from source.utils.error_utils import plot_errors
+from source.dao.visitante_dao import select_by_cpf
 
 
 def validate(name, email, cpf, tel, address):
@@ -37,3 +38,29 @@ def validate_email(email):
     if not email_checker(email):
         return "Email not valid."
     return False
+
+
+def cpf_consulting(cpf):
+    """
+    Function that consulting the database looking for CPF.
+    params: receive a CPF of the consulta_visitante.
+    return: just a simple message.
+    """
+
+    cpf_ver = select_by_cpf(cpf)
+    
+    # if cpf_ver == "":
+    #     msg = f'Campo em branco, favor digitar um CPF.'
+    #     plot_errors(msg)
+        
+    if cpf_ver:
+        msg = f'CPF cadastrado.'
+        plot_errors(msg)
+    else:
+        msg = f'Campo em branco ou CPF inválido.'
+        plot_errors(msg)
+        
+
+#TODO should be a main viwe for to messages.
+def err_consulta(msg):
+    plot_errors(msg)
