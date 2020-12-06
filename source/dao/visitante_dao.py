@@ -1,7 +1,7 @@
 from source.dao.models.visitante import Visitante
 
 """
-    This is the central os visitantes functions.
+    This is the central os visitantes querys.
 """
 
 def insert_visitor(name, email, cpf, tel, address):
@@ -16,10 +16,13 @@ def insert_visitor(name, email, cpf, tel, address):
     return visi.save()
 
 
+# Retunn the unique cpf of the list.
 def select_by_cpf(cpf):
     by_cpf = Visitante.select().where(Visitante.visitor_cpf == cpf).limit(1)
     return True if len(by_cpf) > 0 else False
-    # try:
-    #     return True
-    # except Visitante.model.DoesNotExist:
-    #     return False
+
+
+# Realiza a busca de todos os nomes de visitantes
+def select_by_name():
+    by_name = Visitante.select().where(Visitante.visitor_name != "").get()
+    return by_name

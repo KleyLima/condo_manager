@@ -30,10 +30,10 @@ def clear_and_exit():
 
 
 def add_vehicle():
-    print(di)
     nome_prop = di[cadastrar_veiculo.combo_proprietario.currentText()]
     placa = cadastrar_veiculo.line_placa_veiculo.text()
     cor = cadastrar_veiculo.line_cor_veiculo.text()
+    
     if cadastrar_veiculo.tipo_moto.isChecked():
         tipo = "Moto"
     else:
