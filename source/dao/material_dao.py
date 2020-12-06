@@ -13,3 +13,9 @@ def insert_material(nome_produto, qtd):
     )
     print("Inserting new product...")
     return material.save()
+
+
+# Realiza a busca de todos os nomes de locadores somentes
+def select_by_material():
+    by_name = Materiais.select().where(Materiais.product_name != "").get()
+    return by_name

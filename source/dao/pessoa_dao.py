@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from source.dao.models.pessoa import Pessoa
-from source.dao.visitante_dao import select_by_name
-
 
 # Inserting imovel at Database
 def insert_pessoa(nome, email, cpf, nacio, fone, nasc, tipo, sexo):
