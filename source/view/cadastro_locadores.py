@@ -23,7 +23,7 @@ def add_locadores():
 
     if cadastro_locadores.rb_masc.isChecked():
         sexo = "masculino"
-    elif cadastro_locadores.rb_fem.clicked():
+    elif cadastro_locadores.rb_fem.click():
         sexo = "feminino"
     else:
         sexo = "outros"

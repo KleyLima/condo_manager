@@ -39,3 +39,6 @@ cadastrar_veiculo = Telas("/resource/telas/cadastrar_veiculo.ui").loaded     #
 cadastrar_locacao = Telas("/resource/telas/cadastrar_locacao.ui").loaded     #
 controle_material = Telas("/resource/telas/controle_material.ui").loaded
 error = Telas("/resource/telas/error.ui").loaded
+adicionar_material = Telas("/resource/telas/adicionar_material.ui").loaded
+cadastrar_material = Telas("/resource/telas/cadastrar_material.ui").loaded
+deletar_material = Telas("/resource/telas/deletar_materiais.ui").loaded
