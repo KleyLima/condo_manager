@@ -1,2 +1,3 @@
 #!/bin/bash
-export PYTHONPATH=/home/kleyton/workspace/python/codes/condo_manager
+source venv/bin/activate
+export PYTHONPATH=$(pwd)
