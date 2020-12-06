@@ -257,7 +257,7 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="rb_outros">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -270,7 +270,7 @@
      <string>Outros</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="rb_fem">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -283,7 +283,7 @@
      <string>Feminino</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="rb_masc">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -357,30 +357,30 @@
      <string>Tipo cliente</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_5">
+   <widget class="QRadioButton" name="tipo_locatario">
     <property name="geometry">
      <rect>
       <x>110</x>
       <y>40</y>
-      <width>121</width>
+      <width>91</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Jurídica</string>
+     <string>Locatario</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_4">
+   <widget class="QRadioButton" name="tipo_locador">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>40</y>
-      <width>112</width>
+      <width>81</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Física</string>
+     <string>Locador</string>
     </property>
    </widget>
   </widget>

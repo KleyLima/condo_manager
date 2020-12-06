@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>689</width>
-    <height>587</height>
+    <height>525</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -180,7 +180,7 @@
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>500</y>
+     <y>440</y>
      <width>151</width>
      <height>61</height>
     </rect>
@@ -257,7 +257,7 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="rb_outros">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -270,7 +270,7 @@
      <string>Outros</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="rb_fem">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -283,7 +283,7 @@
      <string>Feminino</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="rb_masc">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -357,7 +357,7 @@
      <string>Tipo cliente</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_5">
+   <widget class="QRadioButton" name="tipo_locatario">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -367,10 +367,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Jurídica</string>
+     <string>Locatario</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_4">
+   <widget class="QRadioButton" name="tipo_locador">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -380,7 +380,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Física</string>
+     <string>Locador</string>
     </property>
    </widget>
   </widget>
@@ -398,7 +398,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>500</y>
+     <y>440</y>
      <width>151</width>
      <height>61</height>
     </rect>
