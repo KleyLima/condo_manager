@@ -63,6 +63,8 @@ def cadas_material():
     
 
     if validate(nome_produto, qtd):
+        load_combo_add()
+        load_combo_rem()
         clear_and_exit(cadastrar_material)
      
 
@@ -74,6 +76,7 @@ def add_material():
     upd = update_add_material(produto, int(qtd))
     upd.execute()
     print("update complete...")
+    
     clear_and_exit(adicionar_material)
 
     
@@ -88,6 +91,7 @@ def rem_material():
     upd = update_rem_material(produto, int(qtd))
     upd.execute()
     print("update complete...")
+    
     clear_and_exit(deletar_material)
 
 
