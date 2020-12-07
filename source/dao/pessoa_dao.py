@@ -29,3 +29,9 @@ def select_by_name_locador():
 def select_by_name_locatario():
     by_name = Pessoa.select().where(Pessoa.name != "", Pessoa.costumer_type == "locatario").get()
     return by_name
+
+
+# Realiza a busca de todos os nomes sem excessao.
+def select_all():
+    by_name = Pessoa.select().where(Pessoa.name != "").get()
+    return by_name

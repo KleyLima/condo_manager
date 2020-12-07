@@ -3,7 +3,6 @@
 from source.dao.models.imovel import Imovel
 from resource.telas.inicializacao import app, cadastrar_locacao
 from PyQt5.QtCore import Qt
-from source.dao.models.visitante import Visitante
 from source.controller.locacao_controller import validate
 from source.dao.pessoa_dao import select_by_name_locador, select_by_name_locatario
 from source.dao.imovel_dao import select_by_imovel
@@ -15,16 +14,13 @@ from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_
 di = {}
 def load_locador():
 
+    di = {}
     lista_nome = select_by_name_locador()
 
     for nome in lista_nome.select():
         di[nome.name] = nome.id
         cadastrar_locacao.combo_locador.addItem(nome.name)
 
-    # cadastrar_locacao.combo_locador.addItem("Ricardo")
-    # cadastrar_locacao.combo_locador.addItem("Gustavo")
-    # cadastrar_locacao.combo_locador.addItem("Brazza")
-    # cadastrar_locacao.combo_locador.addItem("Kleyton")
 
 
 # TODO Trocar pelo select de locatario
@@ -32,6 +28,7 @@ def load_locador():
 di2 = {}
 def load_locatario():
 
+    di2 = {}
     lista_nome = select_by_name_locatario()
 
     for nome in lista_nome.select():
@@ -39,28 +36,18 @@ def load_locatario():
         cadastrar_locacao.combo_locatario.addItem(nome.name)
 
 
-    # cadastrar_locacao.combo_locatario.addItem("Ricardo")
-    # cadastrar_locacao.combo_locatario.addItem("Gustavo")
-    # cadastrar_locacao.combo_locatario.addItem("Brazza")
-    # cadastrar_locacao.combo_locatario.addItem("Kleyton")
-
 
 # TODO Trocar pelo select de imovel
 # to use index to add in database
 di3 = {}
 def load_imovel():
 
+    di3 = {}
     lista_nome = select_by_imovel()
 
     for nome in lista_nome.select():
         di3[nome.name] = nome.id
         cadastrar_locacao.combo_imovel.addItem(nome.name)
-
-
-    # cadastrar_locacao.combo_imovel.addItem("Ricardo")
-    # cadastrar_locacao.combo_imovel.addItem("Gustavo")
-    # cadastrar_locacao.combo_imovel.addItem("Brazza")
-    # cadastrar_locacao.combo_imovel.addItem("Kleyton")
 
 
 
@@ -88,10 +75,11 @@ def clear_and_exit():
 
 
 
-load_locador()
-load_locatario()
-load_imovel()
 cadastrar_locacao.salvar_locacao.clicked.connect(contrato_locacao)
 cadastrar_locacao.setWindowFlag(Qt.FramelessWindowHint)
 cadastrar_locacao.cancel.clicked.connect(clear_and_exit)
 center_screen(cadastrar_locacao)
+# Load bases
+load_locador()
+load_locatario()
+load_imovel()

@@ -14,5 +14,5 @@ def insert_locacao(id_locador, id_locatario, id_imovel, initial_date, finish_dat
         finish_date = finish_date, 
         rented_value = rented_value
     )
-    print("Inserting new home...")
+    print("Inserting new locacao...")
     return locacao.save()
