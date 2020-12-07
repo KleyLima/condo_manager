@@ -75,7 +75,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Adicionar</string>
+    <string>remover</string>
    </property>
   </widget>
   <widget class="QPushButton" name="cancel">
