@@ -13,6 +13,7 @@ from resource.telas.inicializacao import (
     controle_material,
 )
 from time import sleep
+from PyQt5.QtCore import Qt
 from source.utils.screen_utils import center_screen
 
 
@@ -55,6 +56,9 @@ def b_gerencias_materias():
     menu.hide()
     controle_material.show()
 
+def close_prog():
+    menu.close()
+
 
 menu.b_consulta_visitante.clicked.connect(b_consulta_visitante)
 menu.b_cadastro_visitante.clicked.connect(b_cadastro_visitante)
@@ -64,4 +68,7 @@ menu.b_cadastrar_imovel.clicked.connect(b_cadastrar_imovel)
 menu.b_cadastrar_veiculo.clicked.connect(b_cadastrar_veiculo)
 menu.b_gerencias_materias.clicked.connect(b_gerencias_materias)
 menu.b_contrato_locacao.clicked.connect(b_contrato_locacao)
+menu.sair_programa.clicked.connect(close_prog)
+menu.setWindowFlag(Qt.FramelessWindowHint)
+
 center_screen(menu)

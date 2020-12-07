@@ -22,6 +22,10 @@ def select_by_cpf(cpf):
     return True if len(by_cpf) > 0 else False
 
 
+def select_visitor_by_cpf(cpf):
+    by_cpf = Visitante.select().where(Visitante.visitor_cpf == cpf).limit(1)
+    return by_cpf
+
 # Realiza a busca de todos os nomes de visitantes
 def select_by_name():
     by_name = Visitante.select().where(Visitante.visitor_name != "").get()

@@ -5,7 +5,6 @@ from resource.telas.inicializacao import app, consulta_visitante
 from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_menu
 from PyQt5.QtCore import Qt
 from source.utils.screen_utils import center_screen
-
 from source.controller.visitante_controller import err_consulta,cpf_consulting
 
 

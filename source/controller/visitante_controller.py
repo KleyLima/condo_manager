@@ -3,7 +3,7 @@
 from source.utils.validation_utils import email_checker
 from source.dao.visitante_dao import insert_visitor
 from source.utils.error_utils import plot_errors
-from source.dao.visitante_dao import select_by_cpf
+from source.dao.visitante_dao import select_by_cpf, select_visitor_by_cpf
 
 
 def validate(name, email, cpf, tel, address):
@@ -46,15 +46,20 @@ def cpf_consulting(cpf):
     params: receive a CPF of the consulta_visitante.
     return: just a simple message.
     """
-
+    n = ''
     cpf_ver = select_by_cpf(cpf)
+    nome_cpf = select_visitor_by_cpf(cpf)
+
+    for nome in nome_cpf.select():
+        n = nome.visitor_name
+    
     
     # if cpf_ver == "":
     #     msg = f'Campo em branco, favor digitar um CPF.'
     #     plot_errors(msg)
-        
+    
     if cpf_ver:
-        msg = f'CPF cadastrado.'
+        msg = f'CPF cadastrado para o visitante: {n}'
         plot_errors(msg)
     else:
         msg = f'Campo em branco ou CPF inválido.'
