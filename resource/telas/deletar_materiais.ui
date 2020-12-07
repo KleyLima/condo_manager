@@ -123,7 +123,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QComboBox" name="combo_materiais">
+  <widget class="QComboBox" name="combo_materiais_del">
    <property name="geometry">
     <rect>
      <x>10</x>

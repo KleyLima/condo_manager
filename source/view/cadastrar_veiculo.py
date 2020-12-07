@@ -11,7 +11,6 @@ from source.controller.veiculo_controller import validate
 di = {}
 def load_base():
 
-    di = {}
     lista_nome = select_all()
 
     for nome in lista_nome.select():

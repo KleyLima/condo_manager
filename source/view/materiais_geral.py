@@ -2,18 +2,16 @@ from resource.telas.inicializacao import app, controle_material, menu, adicionar
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QLineEdit
 from source.controller.material_controller import validate
-from source.dao.material_dao import select_by_material, update_add_material, update_rem_material
+from source.dao.material_dao import select_by_material, update_add_material, update_rem_material, select_all
 from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_menu
 from source.view.controle_material import att_list
 
 
 # inicializaçao da base de produtos no combo box de adicionar.
 di = {}
-
-
 def load_combo_add():
 
-    lista_nome = select_by_material()
+    lista_nome = select_all()
 
     for nome in lista_nome.select():
         di[nome.product_name] = nome.id
@@ -22,15 +20,13 @@ def load_combo_add():
 
 # inicializaçao da base de produtos no combo box de remover.
 di2 = {}
-
-
 def load_combo_rem():
 
-    lista_nome = select_by_material()
+    lista_nome = select_all()
 
     for nome in lista_nome.select():
         di2[nome.product_name] = nome.id
-        deletar_material.combo_materiais.addItem(nome.product_name)
+        deletar_material.combo_materiais_del.addItem(nome.product_name)
 
 
 # Limpeza de cx de texto e retorno para pagina de controle de materiais
@@ -65,10 +61,9 @@ def cadas_material():
     qtd = cadastrar_material.line_qtd_material.text()
 
     if validate(nome_produto, qtd):
-        load_combo_add()
-        load_combo_rem()
         clear_and_exit(cadastrar_material)
         att_list()
+        
 
 
 # Function that do a update in database, adding qtd in a product list

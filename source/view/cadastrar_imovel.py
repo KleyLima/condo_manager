@@ -10,7 +10,6 @@ from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_
 di = {}
 def load_base_imovel():
 
-    di = {}
     lista_nome = select_all()
 
     for nome in lista_nome.select():

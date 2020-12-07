@@ -14,7 +14,7 @@ from source.utils.screen_utils import center_screen, clear_input_boxes, back_to_
 di = {}
 def load_locador():
 
-    di = {}
+    
     lista_nome = select_by_name_locador()
 
     for nome in lista_nome.select():
@@ -28,7 +28,7 @@ def load_locador():
 di2 = {}
 def load_locatario():
 
-    di2 = {}
+    
     lista_nome = select_by_name_locatario()
 
     for nome in lista_nome.select():
@@ -42,7 +42,7 @@ def load_locatario():
 di3 = {}
 def load_imovel():
 
-    di3 = {}
+    
     lista_nome = select_by_imovel()
 
     for nome in lista_nome.select():

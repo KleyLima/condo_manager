@@ -15,7 +15,7 @@ def insert_material(nome_produto, qtd):
 
 # Realiza a busca de todos os nomes de locadores somentes
 def select_by_material():
-    by_name = Materiais.select().where(Materiais.product_name != "").get()
+    by_name = Materiais.select().where(Materiais.product_name != "")
     return by_name
 
 
